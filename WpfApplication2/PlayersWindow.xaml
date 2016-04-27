@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfApplication2.PlayersWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication2"
+        mc:Ignorable="d"
+Title="PlayersWindow" Height="249.861" Width="363.51" Loaded="Window_Loaded">
+    <Grid>
+        <Grid Margin="10">
+            <Label Content="Player Name:" HorizontalAlignment="Left" Height="30" Margin="47,26,0,0" VerticalAlignment="Top" Width="82"/>
+            <TextBox x:Name="textBox_playerName" HorizontalAlignment="Left" Height="30" Margin="134,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="151"/>
+            <Label Content="Direc. IP:" HorizontalAlignment="Left" Height="30" Margin="47,61,0,0" VerticalAlignment="Top" Width="82"/>
+            <TextBox x:Name="textBox_ip" HorizontalAlignment="Left" Height="30" Margin="134,61,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="151"/>
+            <Label Content="Port:" HorizontalAlignment="Left" Height="30" Margin="47,96,0,0" VerticalAlignment="Top" Width="82"/>
+            <TextBox x:Name="textBox_port" HorizontalAlignment="Left" Height="30" Margin="134,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="151"/>
+            <Button x:Name="btn_afegir_jugador" Content="Afegir" HorizontalAlignment="Left" Height="25" Margin="65,164,0,0" VerticalAlignment="Top" Width="103" Click="btn_afegir_jugador_Click"/>
+            <Button x:Name="btn_tencar" Content="Tencar" HorizontalAlignment="Left" Height="25" Margin="173,164,0,0" VerticalAlignment="Top" Width="103" Click="btn_tencar_Click"/>
+            <RadioButton x:Name="radioButton_Enemic" Content="Enemic" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="104,137,0,0"/>
+            <RadioButton x:Name="radioButton_Amic" Content="Amic" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="173,137,0,0"/>
+        </Grid>
+    </Grid>
+</Window>
